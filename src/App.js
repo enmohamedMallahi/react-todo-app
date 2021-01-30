@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div className="App">
       <header>
-        <h3>TodoApp</h3>
+        <h3>TodoApp <span className="text-tiny">(by mohaXmall)</span></h3>
         <button className="btn" onClick={() => getTodos()}>Get Todos</button>
       </header>
       <div className="todos">

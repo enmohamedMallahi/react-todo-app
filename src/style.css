@@ -5,6 +5,11 @@ body, #root, .App {
 
 h3 {margin: 0;}
 
+.text-tiny {
+  font-size: 14px;
+  color: #ccc;
+}
+
 .App {
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
