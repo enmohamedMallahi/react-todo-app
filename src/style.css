@@ -1,0 +1,59 @@
+body, #root, .App {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {margin: 0;}
+
+.App {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); */
+
+}
+
+/* Navbar */
+
+header {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  border: none;
+  background-color: royalblue;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(116, 146, 236);
+}
+
+/* Todos Section */
+.todos {
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  border: solid #ccc 1px;
+  max-width: 25%px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-check-square {
+  color: green;
+}
+
+.fa-square {
+  color: royalblue;
+}
