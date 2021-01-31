@@ -3,27 +3,21 @@ import Todo from "./components/Todo.js";
 import "./style.css";
 
 export default function App() {
-  const [todos, setTodos] = useState([]);
-
-  async function getTodos() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos');
-    const data = await response.json();
-    // const response = await fetch('https://jsonplaceholder.typicode.com/todos');
-    // const data = await response.json();
-    console.log(data)
-    setTodos(data)
-  }
-
-
+  const [todos, setTodos] = useState([{text: 'Get Money back'}]);
+  
   return (
     <div className="App">
       <header>
         <h3>TodoApp <span className="text-tiny">(by mohaXmall)</span></h3>
         <button className="btn" onClick={() => getTodos()}>Get Todos</button>
       </header>
+      <form style={{textAlign: 'center'}}>
+        <input/>
+        <button>Add</button>
+      </form>
       <div className="todos">
         {todos.map(todo => {
-          return <Todo key={todo.id} title={todo.title} isCompleted={todo.completed} />
+          return <Todo key={todo.id} text={todo.text} isCompleted={todo.completed} />
         })}
       </div>
     </div>
